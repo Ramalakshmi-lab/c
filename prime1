@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int s;
+    scanf("%d",&s);
+    int c=0,i;
+    for(i=2;i<s/2;i++)
+    {
+    if(s%i==0)
+    {
+        c+=1;
+    }
+    }
+    if(c==0){
+        printf("prime");
+    }
+    else{
+        printf("not a prime");
+    
+    }
+}
