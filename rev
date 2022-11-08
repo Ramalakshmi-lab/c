@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int s;
+    scanf("%d",&s);
+    int c=0,r;
+    while(s>0){
+        r=s%10;
+        c=c*10+r;
+        s=s/10;
+    }
+    printf("%d",c);
+}
