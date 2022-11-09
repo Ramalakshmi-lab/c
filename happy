@@ -1,0 +1,29 @@
+#include<stdio.h>
+int happy(int n)
+{
+    int r,p=0;
+    while(n>0)
+    {
+        r=n%10;
+        p=p+r*r;
+        n=n/10;
+    }
+    if(p<9){
+        return p;
+    }
+    else{
+        return happy(p);
+    }
+}
+int main()
+{
+    int s;
+    scanf("%d",&s);
+    int d=happy(s);
+    if(d==1 or d==7){
+        printf("True");
+    }
+    else{
+        printf("False");
+    }
+}
