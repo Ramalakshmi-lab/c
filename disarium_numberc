@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int l=log10(a)+1;
+    int r,p=0,s=0;
+    int o=a;
+    while(a>0)
+    {
+        r=a%10;
+        s=s+(pow(r,l));
+        a=a/10;
+        l-=1;
+    }
+    if(s==o)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
